@@ -84,8 +84,9 @@ namespace test_code_rest_api.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PersonalIdentityCode")
-                        .HasColumnType("int");
+                    b.Property<string>("PersonalIdentityCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()

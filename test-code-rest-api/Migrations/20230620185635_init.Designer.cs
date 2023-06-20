@@ -12,8 +12,8 @@ using test_code_rest_api.Database;
 namespace test_code_rest_api.Migrations
 {
     [DbContext(typeof(ApiDbContext))]
-    [Migration("20230619161831_RestApi")]
-    partial class RestApi
+    [Migration("20230620185635_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -87,8 +87,9 @@ namespace test_code_rest_api.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PersonalIdentityCode")
-                        .HasColumnType("int");
+                    b.Property<string>("PersonalIdentityCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using test_code_rest_api.Database;
 using test_code_rest_api.Interfaces;
 using test_code_rest_api.Mapper;
+using test_code_rest_api.ModelsDTO;
 using test_code_rest_api.Services;
 
 var builder = WebApplication.CreateBuilder(args);

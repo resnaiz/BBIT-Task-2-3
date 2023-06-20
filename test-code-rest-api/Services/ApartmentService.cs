@@ -11,7 +11,7 @@ namespace test_code_rest_api.Services
     {
         private readonly IApiDbContext _context;
         private readonly IMapper _mapper;
-
+ 
         public ApartmentService(IApiDbContext context, IMapper mapper)
         {
             _context = context;
